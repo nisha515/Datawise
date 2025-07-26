@@ -17,8 +17,8 @@
         overflow: hidden;
         text-align: center;
         img {
-            width: 483px; // 👈 Fixed width
-            height: 378px; // 👈 Fixed height
+            width: 483px;
+            height: 378px;
             border-radius: 12px;
             transition: transform 0.4s ease, box-shadow 0.4s ease;
             @media (max-width: 767px) {
@@ -63,4 +63,5 @@
     font-weight: 600;
     border-radius: 15px;
     text-align: center;
+    background: darkgreen;
 }

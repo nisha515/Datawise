@@ -1,6 +1,6 @@
 .hero-section {
     background: #fff;
-    text-align: left; // default
+    text-align: left;
     .hero-title {
         font-size: 2.8rem;
         font-weight: 700;
@@ -67,28 +67,29 @@
             }
         }
     }
-    // Tablet view
+    // Tablet view — Keep same as desktop
     @media (max-width: 991px) {
         .hero-title {
-            font-size: 2.2rem;
+            font-size: 2.8rem; // same as desktop
         }
         .image-grid {
             grid-template-columns: repeat(3, 120px);
-            gap: 12px;
+            gap: 16px;
         }
     }
-    // Mobile view
+    // Mobile view — Override all previously set mobile styles
     @media (max-width: 576px) {
-        text-align: center; // Apply center alignment for mobile
+        text-align: left;
         .hero-title {
-            font-size: 1.8rem;
+            font-size: 2.8rem;
         }
         .hero-subtext {
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
         .image-grid {
-            grid-template-columns: repeat(2, 120px);
-            justify-content: center; // Center grid on mobile
+            grid-template-columns: repeat(3, 120px);
+            justify-content: start;
+            gap: 16px;
         }
     }
 }

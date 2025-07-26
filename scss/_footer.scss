@@ -25,14 +25,6 @@
         list-style: none;
         li {
             margin-bottom: 0.5rem;
-            a {
-                color: #6c757d;
-                text-decoration: none;
-                font-size: 0.9rem;
-                &:hover {
-                    color: #198754;
-                }
-            }
         }
     }
     hr {
@@ -42,13 +34,6 @@
     .text-muted {
         font-size: 0.85rem;
         text-align: center;
-        a {
-            color: #6c757d;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
     }
     @media (max-width: 576px) {
         .col-6,

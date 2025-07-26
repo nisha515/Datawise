@@ -4,39 +4,23 @@
         border-top: 1px solid #e0e0e0;
         padding-top: 2rem;
         padding-left: 0;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        &:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
-        }
         .icon {
             img {
                 width: 68px;
                 height: 68px;
                 object-fit: contain;
-                transition: transform 0.3s ease;
             }
         }
-        &:hover .icon img {
-            transform: scale(1.1);
-        }
         .feature-content {
-            margin-left: 0; // keep text below icon
+            margin-left: 0;
         }
         .feature-title {
-            font-size: 1rem;
+            font-size: 1.25rem;
             font-weight: 600;
             color: #1a1a1a;
-            margin-bottom: 0.5rem;
-        }
-        .feature-text {
-            font-size: 0.9rem;
-            color: #555;
-            max-width: 260px;
-            line-height: 1.6;
+            margin-bottom: 0.75rem;
         }
     }
-    // Tablet and below
     @media (max-width: 768px) {
         .feature-box {
             .icon img {
@@ -44,7 +28,7 @@
                 height: 36px;
             }
             .feature-title {
-                font-size: 0.95rem;
+                font-size: 1.1rem;
             }
             .feature-text {
                 font-size: 0.85rem;
