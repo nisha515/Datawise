@@ -1,0 +1,66 @@
+.analytics-section {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    .features-list {
+        li {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #333;
+            font-size: 0.95rem;
+            @media (min-width: 768px) {
+                font-size: 1rem;
+            }
+        }
+    }
+    .image-wrapper {
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        img {
+            width: 483px; // 👈 Fixed width
+            height: 378px; // 👈 Fixed height
+            border-radius: 12px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            @media (max-width: 767px) {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &:hover img,
+        &:focus-within img {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .card-overlay {
+            background: white;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 0.85rem;
+            color: #2f2f2f;
+            margin-top: 12px;
+            padding: 6px 12px;
+            transition: all 0.3s ease;
+            @media (min-width: 768px) {
+                font-size: 0.9rem;
+            }
+            @media (min-width: 992px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.get-demo {
+    width: 187px;
+    height: 64px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    font-weight: 600;
+    border-radius: 15px;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+body {
+    font-family: $font-family;
+}
+
+.faq-section {
+    background-color: #fff;
+    h2 {
+        font-size: 36px;
+        font-weight: 600;
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+    h6 {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #111;
+    }
+    p {
+        font-size: 15px;
+        color: #555;
+        line-height: 1.6;
+    }
+    .row>div {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}

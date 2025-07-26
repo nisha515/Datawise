@@ -1,0 +1,91 @@
+$primary-color: #198754;
+$font-family: 'Inter',
+sans-serif;
+body {
+    font-family: $font-family;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-navbar {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    .nav-link {
+        color: #333;
+        font-weight: 500;
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:hover {
+            color: $primary-color;
+        }
+        @media (max-width: 768px) {
+            font-size: 14px;
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        @media (max-width: 576px) {
+            display: block;
+            padding: 8px 0;
+            text-align: center;
+        }
+    }
+    .btn {
+        font-weight: 500;
+        border-radius: 15px;
+        font-size: 14px;
+        text-align: center;
+        padding: 0;
+        @media (max-width: 576px) {
+            font-size: 13px;
+        }
+    }
+    .custom-outline {
+        width: 136px;
+        height: 52px;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        background-color: transparent;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background-color: rgba($primary-color, 0.08);
+        }
+    }
+    .custom-filled {
+        width: 187px;
+        height: 52px;
+        background-color: $primary-color;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+            background-color: darken($primary-color, 5%);
+        }
+    }
+    .navbar-collapse {
+        @media (max-width: 992px) {
+            background-color: #ffffff;
+            padding: 10px;
+        }
+    }
+    .navbar-nav {
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+    .navbar-brand {
+        font-size: 1.25rem;
+        @media (max-width: 576px) {
+            font-size: 1.1rem;
+        }
+        img {
+            height: 32px;
+            width: 113.55px;
+            object-fit: contain;
+        }
+    }
+}

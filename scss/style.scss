@@ -1,44 +1,13 @@
-// ===== VARIABLES =====
-$primary-color: #198754;
-$font-family: 'Inter',
-sans-serif;
 @import '../node_modules/bootstrap/scss/functions';
 @import '../node_modules/bootstrap/scss/variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import "~bootstrap/scss/bootstrap";
-// ===== GLOBAL =====
-body {
-    font-family: $font-family;
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
-}
-
-// ===== NAVBAR =====
-.navbar {
-    background: #fff;
-    .logo-img {
-        height: 32px; // reduced from 40px
-    }
-    .nav-link {
-        color: #333;
-        &:hover {
-            color: $primary-color;
-        }
-    }
-    .btn-outline-success {
-        border-color: $primary-color;
-        color: $primary-color;
-        &:hover {
-            background: $primary-color;
-            color: #fff;
-        }
-    }
-    .btn-success {
-        background: $primary-color;
-        border-color: $primary-color;
-        &:hover {
-            background: darken($primary-color, 5%);
-        }
-    }
-}
+@import './nav';
+@import './hero';
+@import './section2';
+@import './section3';
+@import './section4';
+@import './section5';
+@import './section6';
+@import './section7';
+@import './section8';
